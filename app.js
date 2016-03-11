@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var passport = require('./strategies/user');
+var passport = require('./strategies/user_sql.js');
 var session = require('express-session');
 
 // Route includes

@@ -1,3 +1,4 @@
+// connection.js
 var connectionString = '';
 
 if(process.env.DATABASE_URL != undefined) {

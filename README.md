@@ -2,7 +2,7 @@
 Download and run 'npm install' before the lecture as prep. In this lecture, we will build out a user registration page and allow our users to log into our application. Once they are logged in, we will see information returned to us, specific to the user.
 
 # SQL Strategy Branch
-The main difference is it now uses ```/strategies/user_sql.js```. See ```/modules/connection.js``` to set your Database connection string. You will find a basic ```CREATE TABLE``` query commented out in the strategy file.
+Branched from `angular-complete`. The main difference is it now uses ```/strategies/user_sql.js```. See ```/modules/connection.js``` to set your Database connection string. You will find a basic ```CREATE TABLE``` query commented out in the strategy file.
 
 You'll need the ```pg``` module as well (just run ```npm install```)
 

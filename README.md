@@ -1,6 +1,8 @@
 # Angular Complete Branch
 This branch updates `master` to use Angular as the client side library, removes Grunt, but maintains MongoDB as the database.
 
+Requests are made directly to the server and does not have much error-handling. Uses default Passport auth flow and redirects.
+
 # Express/Passport Lecture Starting File
 Download and run 'npm install' before the lecture as prep. In this lecture, we will build out a user registration page and allow our users to log into our application. Once they are logged in, we will see information returned to us, specific to the user.
 

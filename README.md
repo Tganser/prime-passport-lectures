@@ -1,3 +1,6 @@
+# Angular Controlled Login
+Uses Angular to control the login flow and handle logging in via AJAX instead of requests dirctly from the form to the server.
+
 # Express/Passport Lecture Starting File
 Download and run 'npm install' before the lecture as prep. In this lecture, we will build out a user registration page and allow our users to log into our application. Once they are logged in, we will see information returned to us, specific to the user.
 

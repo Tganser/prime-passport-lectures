@@ -1,7 +1,7 @@
 # SQL Strategy Branch
 Branched from `angular-ctrl-with-routes`. The main difference is it now uses `/strategies/user_sql.js`. See `/modules/connection.js` to set your PostGRES DB connection string. You will find a basic `CREATE TABLE` query commented out in the strategy file.
 
-You'll need the pg` module as well (just run `npm install`)
+You'll need the `pg` module as well (just run `npm install`)
 
 `/models/user.js` is no longer needed at all.
 

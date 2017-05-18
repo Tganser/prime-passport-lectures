@@ -1,30 +1,34 @@
 <div class="container" ng-init="lc.getItem()" >
 
-<H2>View the Shelf:</H2>
 
-<div class="col-md-4" ng-repeat="thing in lc.itemArray">
+    <div id="login">
+      <h1 class="lead">Login</h1>
+      <h1 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
+        <form ng-submit="lc.login()">
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" ng-model="lc.user.username" />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" ng-model="lc.user.password" />
+          </div>
+          <div>
+            <input class="btn btn-default" type="submit" name="submit" value="Log In" />
+            <a href="#register">Register</a>
+          </div>
+        </form>
+      </div>
+  <H2>View the Shelf:</H2>
+
+  <div class="col-md-3 card" ng-repeat="thing in lc.itemArray">
     <img ng-src="{{thing.imageUrl}}" />
-  <h4>{{thing.item}}</h4>  <h4>{{thing.description}}</h4>
+    <h4>{{thing.item}}</h4>  <h4>{{thing.description}}</h4>
 
-  <!-- <img src="https://s-media-cache-ak0.pinimg.com/736x/93/f0/9e/93f09e6d7619e99ad9aa61ee61c288e9.jpg" alt="this the shelf"> -->
-  <!-- // this is where all the stuff on the shelf will go using ng-repeat -->
-<!-- ng-repeat="thing in lc.itemArray" -->
-</div>
+    <!-- <img src="https://s-media-cache-ak0.pinimg.com/736x/93/f0/9e/93f09e6d7619e99ad9aa61ee61c288e9.jpg" alt="this the shelf"> -->
+    <!-- // this is where all the stuff on the shelf will go using ng-repeat -->
+    <!-- <h4>{{thing.user}}</h4> -->
+    <!-- ng-repeat="thing in lc.itemArray" -->
+  </div>
 
-  <h1 class="lead">Login</h1>
-    <h1 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
-    <form ng-submit="lc.login()">
-      <div>
-          <label for="username">Username:</label>
-          <input type="text" ng-model="lc.user.username" />
-      </div>
-      <div>
-          <label for="password">Password:</label>
-          <input type="password" ng-model="lc.user.password" />
-      </div>
-      <div>
-          <input class="btn btn-default" type="submit" name="submit" value="Log In" />
-          <a href="#register">Register</a>
-      </div>
-    </form>
-</div>
+  </div>

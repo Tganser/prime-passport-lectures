@@ -43,6 +43,7 @@ router.post('/', function(req, res) {
           // route a new express request for GET '/'
           // Item.save();
           console.log('success!');
+          res.sendStatus(200);
          }
     });
 });

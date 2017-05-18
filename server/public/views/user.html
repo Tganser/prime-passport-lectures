@@ -2,7 +2,7 @@
     <h1 id="welcome" class="lead">Welcome, {{uc.userName}}!</h1>
     <!-- <p>This is the user page!</p> -->
 
-    <div class="container" ng-repeat="thing in uc.itemArray">
+    <div class="col-md-3 card" ng-repeat="thing in uc.itemArray">
       <img ng-src="{{thing.imageUrl}}" />
     <h4>{{thing.item}}</h4>  <h4>{{thing.description}}</h4>
 

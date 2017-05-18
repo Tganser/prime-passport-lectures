@@ -11,26 +11,12 @@ Password: 123
 ![whiteboard](/image1.JPG?raw=true "whiteboard")
 
 Planning
------
-#Shelf Group Project
+===========
 
-##View
+View
+----
 
 [x] **File Structure**
-
-	public
-	server
-		app.js
-	views
-		index.html
-	vendors
-		bootstrap
-		angular
-		css
-	scripts
-		client.js
-			+ services here
-
 
 [x] npm install express bootstrap body parser angular etc
 
@@ -44,7 +30,8 @@ Planning
 
 [x] bootstrap, client, angular, css
 
-##Client
+Client
+-----
 
 [ ] set up controller
 	- log in controller
@@ -61,7 +48,8 @@ Planning
 [ ] test
 
 
-##Server
+Server
+-----
 
 [ ] GET route
 
@@ -72,9 +60,10 @@ Planning
 [ ] connect to DB
 
 
-##Database
+Database
+----
 
-[ ] test 
+[] test
 
 
 

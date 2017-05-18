@@ -24,7 +24,7 @@ View
 **View Planning:**
 
 - [ ] Home view
-- [ ] User Edit View
+- [x] User Edit View
 
 **Sourcing**
 
@@ -33,15 +33,19 @@ View
 Client
 -----
 
-- [ ] set up controller
-	- log in controller
-	- shelf controller
+- [ ] set up controllers
+	- [x] log in controller
+	- [ ] shelf controller
+  - [x] user controller
 
 - [ ] create object
-	- shelf object
+	- [ ] shelf object
+  - [ ] send to server
+  - [ ] send to DB
 
 - [ ] GET route
 	- get all items on shelf
+
 - [ ] POST route
 	- post a new item to shelf
 

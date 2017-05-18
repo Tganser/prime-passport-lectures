@@ -1,5 +1,35 @@
 <div class="container">
     <h1 id="welcome" class="lead">Welcome, {{uc.userName}}!</h1>
-    <p>This is the user page!</p>
+    <!-- <p>This is the user page!</p> -->
+
+    <div class="container">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/93/f0/9e/93f09e6d7619e99ad9aa61ee61c288e9.jpg" alt="this the shelf">
+      <!-- // this is where all the stuff on the shelf will go using ng-repeat -->
+
+    </div>
+
+    <hr />
+    <h3>Add a new item to the shelf:</h3>
+    <form ng-submit="uc.addItem()">
+      <div>
+          <label for="item">Item:</label>
+          <input type="text" ng-model="uc.user.item" />
+      </div>
+      <div>
+          <label for="description">Description:</label>
+          <input type="text" ng-model="uc.user.description" />
+      </div>
+      <div>
+          <label for="imageUrl">Image URL:</label>
+          <input type="url" ng-model="uc.user.imageUrl" />
+      </div>
+      <div>
+          <input class="btn btn-default" type="submit" name="submit" value="Add Item" />
+      </div>
+    </form>
+
+
+    <hr />
+
     <button class="btn btn-default" ng-click="uc.logout()">Log Out</button>
 </div>

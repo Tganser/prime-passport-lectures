@@ -21,5 +21,12 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
       console.log('logged out');
       $location.path("/home");
     });
-  }
+  };
+
+  vm.addItem = function(){
+    console.log("in add item route!");
+    console.log("item: " + vm.user.item);
+    console.log("description", vm.user.description);
+    console.log("image url", vm.user.imageUrl);
+  };
 }]);

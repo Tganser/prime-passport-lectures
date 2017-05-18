@@ -34,20 +34,19 @@ View
 Client
 -----
 
-- [ ] set up controllers
+- [x] set up controllers
 	- [x] log in controller
-	- [ ] shelf controller
   - [x] user controller
 
-- [ ] create object
+- [x] create object
 	- [x] shelf object
-  - [ ] send to server
-  - [ ] send to DB
+  - [x] send to server
+  - [x] send to DB
 
 - [ ] GET route
 	- get all items on shelf
 
-- [ ] POST route
+- [x] POST route
 	- post a new item to shelf
 
 - [ ] test
@@ -58,11 +57,11 @@ Server
 
 - [ ] GET route
 
-- [ ] POST route
+- [x] POST route
 
-- [ ] create DB
+- [x] create DB
 
-- [ ] connect to DB
+- [x] connect to DB
 
 
 Database

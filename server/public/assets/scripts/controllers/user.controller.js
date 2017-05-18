@@ -36,11 +36,11 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
     };
     console.log('object to send: ', objectToSend);
     $http({
-      method: POST,
+      method: 'POST',
       url: '/addItem',
       data: objectToSend
     }).then(function(response){
-      console.log('response in $http: ', response);
+      console.log('response in $http: ', response.data);
     });
   };
 }]);

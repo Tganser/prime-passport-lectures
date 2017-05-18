@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
+var Item = require('../models/items.model');
 var path = require('path');
 
 // Handles Ajax request for user information if user is authenticated
@@ -25,6 +26,23 @@ router.get('/logout', function(req, res) {
   console.log('Logged out');
   req.logOut();
   res.sendStatus(200);
+});
+
+router.post('/', function(req, res) {
+    console.log('in /addItem route');
+    console.log('user ->', req.session.passport.user);
+    req.body.user = req.session.passport.user;
+    Item.create(new Item(req.body), function(err, post) {
+      console.log('req.body ->', req.body);
+         if(err) {
+           // next() here would continue on and route to routes/index.js
+            res.sendStatus(500);
+         } else {
+          // route a new express request for GET '/'
+          // Item.save();
+          console.log('success!');
+         }
+    });
 });
 
 

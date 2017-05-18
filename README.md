@@ -1,8 +1,9 @@
+Team Name: angular-controlled-login-intro
+
+
 - Abby Sepple
 - Amal angular-controlled-login-intro
 - Tessa Ganser
-
-Team Name: angular-controlled-login-intro
 
 Username: NAME
 Password: 123

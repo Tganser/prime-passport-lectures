@@ -37,33 +37,33 @@ Client
 	- log in controller
 	- shelf controller
 
-[ ] create object
+- [ ] create object
 	- shelf object
 
-[ ] GET route
+- [ ] GET route
 	- get all items on shelf
-[ ] POST route
+- [ ] POST route
 	- post a new item to shelf
 
-[ ] test
+- [ ] test
 
 
 Server
 -----
 
-[ ] GET route
+- [ ] GET route
 
-[ ] POST route
+- [ ] POST route
 
-[ ] create DB
+- [ ] create DB
 
-[ ] connect to DB
+- [ ] connect to DB
 
 
 Database
 ----
 
-[] test
+- [ ] test
 
 
 

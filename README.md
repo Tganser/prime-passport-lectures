@@ -5,7 +5,7 @@ Tessa Ganser
 Team Name: angular-controlled-login-intro
 
 
-![whiteboard]()
+![whiteboard](/image1.JPG?raw=true "whiteboard")
 
 Technologies
 ------------

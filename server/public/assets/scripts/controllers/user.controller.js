@@ -43,4 +43,8 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
       console.log('response in $http: ', response.data);
     });
   };
+
+
+
+  //load when controller loads
 }]);

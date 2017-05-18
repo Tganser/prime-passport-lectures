@@ -31,6 +31,8 @@ router.get('/logout', function(req, res) {
 router.post('/', function(req, res) {
     console.log('in /addItem route');
     console.log('user ->', req.session.passport.user);
+    console.log('user ->', req.user);
+
     req.body.user = req.session.passport.user;
     Item.create(new Item(req.body), function(err, post) {
       console.log('req.body ->', req.body);

@@ -11,6 +11,7 @@ var session = require('express-session');
 var index = require('./routes/index');
 var user = require('./routes/user');
 var register = require('./routes/register');
+var items = require('./routes/items');
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -25,7 +26,8 @@ app.use(session({
    key: 'user', // this is the name of the req.variable. 'user' is convention, but not required
    resave: 'true',
    saveUninitialized: false,
-   cookie: { maxage: 60000, secure: false }
+   cookie: { maxage: 600000000000000000000, secure: false }
+   //upping the maxage time here will allow us to not have to log in a HUNDRED times a minute
 }));
 
 // start up passport sessions
@@ -36,6 +38,7 @@ app.use(passport.session());
 app.use('/register', register);
 app.use('/user', user);
 app.use('/addItem', user);
+app.use('/items', items);
 app.use('/*', index);
 
 // Mongo Connection //

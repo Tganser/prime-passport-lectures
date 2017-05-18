@@ -43,4 +43,15 @@ myApp.controller('LoginController', ['$http', '$location', function($http, $loca
         });
       }
     }
+
+    vm.getItem = function () {
+      $http({
+        method: 'GET',
+        url: '/items',
+      }).then(function (response){
+        console.log('response from server in getItem route ', response.data);
+      });
+    };
+
+
 }]);

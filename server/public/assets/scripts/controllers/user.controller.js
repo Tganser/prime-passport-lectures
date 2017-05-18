@@ -28,5 +28,19 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
     console.log("item: " + vm.user.item);
     console.log("description", vm.user.description);
     console.log("image url", vm.user.imageUrl);
+
+    var objectToSend = {
+      item: vm.user.item,
+      description: vm.user.description,
+      imageUrl: vm.user.imageUrl
+    };
+    console.log('object to send: ', objectToSend);
+    $http({
+      method: POST,
+      url: '/addItem',
+      data: objectToSend
+    }).then(function(response){
+      console.log('response in $http: ', response);
+    });
   };
 }]);

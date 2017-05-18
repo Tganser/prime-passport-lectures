@@ -39,7 +39,7 @@ Client
   - [x] user controller
 
 - [ ] create object
-	- [ ] shelf object
+	- [x] shelf object
   - [ ] send to server
   - [ ] send to DB
 

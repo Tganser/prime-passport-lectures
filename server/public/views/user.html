@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container" ng-init="uc.getItem()">
     <h1 id="welcome" class="lead">Welcome, {{uc.userName}}!</h1>
     <!-- <p>This is the user page!</p> -->
 
-    <div class="container">
-      <img src="https://s-media-cache-ak0.pinimg.com/736x/93/f0/9e/93f09e6d7619e99ad9aa61ee61c288e9.jpg" alt="this the shelf">
+    <div class="container" ng-repeat="thing in uc.itemArray">
+      <img ng-src="{{thing.imageUrl}}" />
+    <h4>{{thing.item}}</h4>  <h4>{{thing.description}}</h4>
+
+      <!-- <img src="https://s-media-cache-ak0.pinimg.com/736x/93/f0/9e/93f09e6d7619e99ad9aa61ee61c288e9.jpg" alt="this the shelf"> -->
       <!-- // this is where all the stuff on the shelf will go using ng-repeat -->
 
     </div>

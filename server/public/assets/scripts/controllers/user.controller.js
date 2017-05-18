@@ -44,6 +44,16 @@ myApp.controller('UserController', ['$http', '$location', function($http, $locat
     });
   };
 
+  vm.getItem = function () {
+    $http({
+      method: 'GET',
+      url: '/items',
+    }).then(function (response){
+      console.log('response from server in getItem route ', response.data);
+      vm.itemArray = response.data;
+    });
+  };
+
 
 
   //load when controller loads

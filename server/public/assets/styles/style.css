@@ -42,5 +42,10 @@
 
 .jumbotron {
     background-color: #333;
-    
+
+}
+
+.img {
+  width: 50%;
+  height: auto;
 }

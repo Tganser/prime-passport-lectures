@@ -50,6 +50,7 @@ myApp.controller('LoginController', ['$http', '$location', function($http, $loca
         url: '/items',
       }).then(function (response){
         console.log('response from server in getItem route ', response.data);
+        vm.itemArray = response.data;
       });
     };
 

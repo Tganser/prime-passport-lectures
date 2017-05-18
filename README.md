@@ -1,11 +1,84 @@
-Abby Sepple
-Amal angular-controlled-login-intro
-Tessa Ganser
+- Abby Sepple
+- Amal angular-controlled-login-intro
+- Tessa Ganser
 
 Team Name: angular-controlled-login-intro
 
+Username: NAME
+Password: 123
+
 
 ![whiteboard](/image1.JPG?raw=true "whiteboard")
+
+Planning
+-----
+#Shelf Group Project
+
+##View
+
+[x] **File Structure**
+
+	public
+	server
+		app.js
+	views
+		index.html
+	vendors
+		bootstrap
+		angular
+		css
+	scripts
+		client.js
+			+ services here
+
+
+[x] npm install express bootstrap body parser angular etc
+
+
+**View Planning:**
+
+[ ] Home view
+[ ] User Edit View
+
+**Sourcing**
+
+[x] bootstrap, client, angular, css
+
+##Client
+
+[ ] set up controller
+	- log in controller
+	- shelf controller
+
+[ ] create object
+	- shelf object
+
+[ ] GET route
+	- get all items on shelf
+[ ] POST route
+	- post a new item to shelf
+
+[ ] test
+
+
+##Server
+
+[ ] GET route
+
+[ ] POST route
+
+[ ] create DB
+
+[ ] connect to DB
+
+
+##Database
+
+[ ] test 
+
+
+
+
 
 Technologies
 ------------

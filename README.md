@@ -16,24 +16,24 @@ Planning
 View
 ----
 
-[x] **File Structure**
+- [x] **File Structure**
 
-[x] npm install express bootstrap body parser angular etc
+- [x] npm install express bootstrap body parser angular etc
 
 
 **View Planning:**
 
-[ ] Home view
-[ ] User Edit View
+- [ ] Home view
+- [ ] User Edit View
 
 **Sourcing**
 
-[x] bootstrap, client, angular, css
+- [x] bootstrap, client, angular, css
 
 Client
 -----
 
-[ ] set up controller
+- [ ] set up controller
 	- log in controller
 	- shelf controller
 

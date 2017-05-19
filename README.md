@@ -24,7 +24,7 @@ View
 
 **View Planning:**
 
-- [ ] Home view
+- [x] Home view
 - [x] User Edit View
 
 **Sourcing**
@@ -43,19 +43,19 @@ Client
   - [x] send to server
   - [x] send to DB
 
-- [ ] GET route
+- [x] GET route
 	- get all items on shelf
 
 - [x] POST route
 	- post a new item to shelf
 
-- [ ] test
+- [x] test
 
 
 Server
 -----
 
-- [ ] GET route
+- [x] GET route
 
 - [x] POST route
 
@@ -67,7 +67,7 @@ Server
 Database
 ----
 
-- [ ] test
+- [x] test
 
 
 
